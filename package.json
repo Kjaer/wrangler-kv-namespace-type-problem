@@ -7,11 +7,12 @@
 		"dev": "wrangler dev",
 		"start": "wrangler dev",
 		"test": "vitest",
-		"cf-typegen": "wrangler types"
+		"cf-typegen": "wrangler types",
+		"typecheck": "node ./node_modules/@typescript/native-preview-darwin-arm64/lib/tsgo --project tsconfig.json"
 	},
 	"devDependencies": {
 		"@cloudflare/vitest-pool-workers": "^0.8.19",
-		"typescript": "^5.5.2",
+		"@typescript/native-preview": "^7.0.0-dev.20260101.1",
 		"vitest": "~3.0.7",
 		"wrangler": "^4.19.1"
 	}
